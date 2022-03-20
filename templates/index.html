@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GUI</title>
+	
+</head>
+<style type="text/css">.container{
+	box-sizing:200px; 
+}</style>
+
+ <br><br><br>
+<body style="background-image: url(/static/images/image2.jpg);background-size: cover;background-repeat: no-repeat;"> 
+	<form action="{{ url_for('predict')}} " method="post" ; style="background-color:rgba(232, 238, 240, 0.671); width: 600px; padding: 5px;position: absolute;  top:25%; left:30%; box-shadow: 10px 10px 5px rgba(150, 148, 148, 0.61); ">
+  <div style="font-size: 30px;"><h3 style="text-align: center; color: purple ">Bank Note Authuntication System </h3></div>
+	<div style="text-align: center; padding: 10px;">
+
+     		     
+	<input style="width:300px; height: 25px; margin: 10px;" typestyle="width:300px; height: 25px;" id="variance", name="variance" type="text" placeholder="Variance">
+                              
+		     
+	<input style="width:300px; height: 25px; margin: 10px;" typestyle="width:300px; height: 25px;" id="skewness", name="skewness" type="text" placeholder="Skewness">
+
+                            <br>
+	<input style="width:300px; height: 25px; margin: 10px;" id="curtosis", name="curtosis" type="text" placeholder="Curtosis"> 
+
+	<input style="width:300px; height: 25px; margin: 10px;" id="entropy" name="entropy" type="text" placeholder="Entropy"> 
+<br>  
+  <button style="width:300px; height: 35px; margin: 10px; background-color: rgba(143, 137, 153, 0.404); " type="Submit"> Submit </button></div>
+
+
+	<div class="card-footer" style="text-align: center">
+	
+					<h1>{{prediction}}</h1>
+				</div>
+
+
+</form>
+
+
+
+
+
+</body>
+</html>
