@@ -34,14 +34,7 @@ def predict():
         
         else:
             return render_template('index.html', prediction="Fake Note")
-            
-            
-        
-        
-        
-        
-    
-        print(variance)
+           
     
     
     
